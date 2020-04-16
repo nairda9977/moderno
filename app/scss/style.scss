@@ -1,18 +1,113 @@
-html{
-    box-sizing: border-box;
-}
-*, *::before, *::after{
-    box-sizing: inherit;
-}
-.box{
-    padding: 20px;
-    margin: 40px;
-    overflow: hidden;
-    display: block;
-    background-color: #000;
+@import 'vars';
+@import 'global';
+@import 'fonts';
 
-}
-body{
-    background-color: red;
+.header__top-inner{
     display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
 }
+.header__text{
+    margin-left: auto;
+    margin-right: 50px;
+    span{
+        color: $red;
+    }
+}
+.header__btn{
+    padding: 4px;
+    border-radius: 4px;
+    width: 72px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    line-height: 24px;
+}
+.header__btn-login{
+    background-color: $green;
+}
+.header__btn-register{
+    background-color: $red;
+}
+.header__menu{
+    background-color: $bg;    
+}
+.menu{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.menu__list{
+    li{
+        display: inline-block;
+    
+    &+li{
+        margin-left: 30px;
+    }
+ }
+    a{
+        color: #fff;
+        font-size: 14px;
+    }
+}
+.search{
+    
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    min-height: 533px;
+}
+.search__inner{
+    padding: 160px 0 100px;
+    color: #ffff;
+    text-align: center;
+    &-title{
+        margin-bottom: 10px;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 75px;
+    }
+    &-text{
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 500; 
+        margin-bottom: 60px;
+    }
+    &-form{
+        max-width: 670px;
+        margin: 0 auto;
+        position: relative;
+        
+        input{
+            display: block;
+            width: 100%;
+            border-radius: 4px;
+            height: 56px;
+            box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
+            border: none;
+            font-size: 14px;
+            line-height: 30px;
+            font-weight: 500;
+            padding-left: 25px;
+            padding-right: 60px;
+
+        }
+        button{
+            position: absolute;
+            right: 20px;
+            top: 17px;
+            background-color: transparent;
+            border: none;
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
