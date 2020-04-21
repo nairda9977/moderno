@@ -1,6 +1,6 @@
 @import 'vars';
 @import 'global';
-@import 'fonts';
+@import 'fonts'; 
 
 //header top start
 .header__top-inner{
@@ -203,6 +203,7 @@
         font-size: 14px;
         font-weight: 500;
     }
+  
     
 }
 .products__bottom-btn{
@@ -223,6 +224,120 @@
         outline: none
     }
 }
+.rateYo{
+    display: inline-block;
+    margin-right: 10px;
+}
+.product__title-star{
+    span{
+        color: #212225;
+    }
+}
+.product__item-avatar{
+    span{
+        max-width: 200px;
+    }
+}
+
+
+.product-slider{
+    padding: 120px 0 120px;
+    .product-slider__title{
+        color: #263238;
+        font-size: 36px;
+    }
+    .slick-dots{
+        text-align: center;
+        margin-top: 40px;
+        li{
+            display: inline-block;
+            margin-left: 4px;
+            margin-right: 4px;
+            button{
+                font-size: 0;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                  background-color: rgb(232, 232, 232);
+                border: none;
+                outline: none;
+                
+            }
+        }
+        li.slick-active{
+            button{
+              background-color: #8bc34a;  
+            }
+            
+        }
+    }
+    
+}
+.advantages{
+    padding: 120px 0;
+    background-color: $bg;
+    &__title{
+        color: #fff;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__inner-item{
+    max-width: 370px;
+        text-align:center;
+        padding: 0 15px;
+    }
+    &__inner-title{
+        color: #fff;
+        font-size: 24px;
+        line-height: 60px;
+    }
+}
+.advantages__inner-image{
+    width: 113px;
+    height: 112px;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    margin-top: 45px;
+}
+.author{
+    min-height: 714px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    &__inner{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+         background-color: $green;
+        max-width: 650px;
+        width: 100%;
+        min-height: 217px;
+        &-title{
+            color: #fff;
+            font-size: 30px;
+            line-height: 36px;
+            font-weight: 500;
+            max-width: 270px;
+            span{
+                font-weight: 700;
+            }
+        }
+        &-link{
+            padding: 27px 44px;
+            color: $bg;
+            background-color: #fff;
+            font-size: 18px;
+        }
+        
+    }
+}
+
+
+
+
 
 
 
