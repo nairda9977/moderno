@@ -4,6 +4,10 @@ html{
 *, *::before, *::after{
     box-sizing: inherit;
 }
+html,
+body {
+	height: 100%;
+}
 a {
     display: inline-block;
     text-decoration: none;
@@ -20,6 +24,20 @@ li{
     margin: 0 auto;
     padding: 0 15px;
 }
+
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
 body{
     font-family: 'Roboto-Regular', sans-serif;
     font-weight:400;
@@ -43,4 +61,47 @@ body{
     line-height: 60px;
     color: $bg;
     margin-bottom: 49px;
+}
+.page-content{
+    background-color: $grey;
+}
+
+.breadcrumbs{
+    &__inner{
+        padding: 45px 0px 40px;
+    }
+    &__list{
+        li{
+            display: inline-block;
+            position: relative;
+           
+            
+        &+li{
+            padding-left: 24px;
+        &::before{
+          content: "-";
+          position: absolute;
+          left: 8px;
+          color: $green;
+                
+                 }
+                  }
+         &:last-child{
+             a, span{
+            color: $bg;
+              }
+            }
+        }
+        a{
+            color: #b0bec5;
+        }
+    }
+}
+.breadcrumbs__list{
+    li+li::before{
+        content: "-";
+                position: absolute;
+                left: 8px;
+                color: $green;
+}
 }

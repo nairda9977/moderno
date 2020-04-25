@@ -33,6 +33,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.icon-search:before {
+  content: "\f002";
+}
 .icon-map-marker:before {
   content: "\f041";
 }
@@ -53,4 +57,16 @@
 }
 .icon-location-arrow:before {
   content: "\f124";
+}
+.icon-unsorted:before {
+  content: "\f0dc";
+}
+.icon-sort-amount-desc:before {
+  content: "\ea4d";
+}
+.icon-th-large:before {
+  content: "\f009";
+}
+.icon-th-list:before {
+  content: "\f00b";
 }

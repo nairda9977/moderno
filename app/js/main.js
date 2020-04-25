@@ -39,3 +39,21 @@ $(function(){
   
 });
 
+   $('.slider-js').ionRangeSlider({
+  type: "double",
+  min: 0,
+  max: 50000,
+  from: 200,
+  to: 7000,
+  grid: true,
+  prefix: "$"
+    });
+
+  $(".rateYo").rateYo({
+    rating: 5.0,
+    starWidth: "12px", 
+        readOnly: true
+  });
+
+ 
+
