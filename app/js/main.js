@@ -1,5 +1,5 @@
 $(function(){
-   var mixer = mixitup('.products__inner-box');
+   
       
     $(".rateYo").rateYo({
     rating: 5.0,
@@ -37,11 +37,7 @@ $(function(){
   ]
     });
     
-  
-  
-});
-
-   $('.slider-js').ionRangeSlider({
+       $('.slider-js').ionRangeSlider({
   type: "double",
   min: 0,
   max: 50000,
@@ -68,6 +64,22 @@ $('.icon-th-large').on('click' , function(){
     $('.icon-th-large').addClass('active');
     $('.icon-th-list').removeClass('active');
 })
+
+$('.menu__btn').on('click', function(){
+    $('.menu__list').slideToggle();
+})
+
+$('.header__btn-menu').on('click', function(){
+    $('.header__box').toggleClass('active');
+})
+
+var mixer = mixitup('.products__inner-box');
+    
+  
+  
+});
+
+
 
  
 

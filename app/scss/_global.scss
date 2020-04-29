@@ -24,7 +24,9 @@ li{
     margin: 0 auto;
     padding: 0 15px;
 }
-
+body{
+    overflow-x: hidden;
+}
 
 .wrapper {
 	display: flex;

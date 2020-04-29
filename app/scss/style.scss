@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'global';
-@import 'fonts'; 
+@import 'fonts';
+
 
 //header top start
 .header__top-inner{
@@ -33,7 +34,8 @@
     background-color: $red;
 }
 .header__menu{
-    background-color: $bg;    
+    background-color: $bg; 
+
 }
 .menu{
     display: flex;
@@ -53,6 +55,11 @@
         font-size: 14px;
     }
 }
+.header__btn-menu, .menu__btn{
+    display: none;
+}
+
+
 // end  header top
 //  start  search
 .search{
@@ -942,6 +949,8 @@
 .header__box{
 display: flex;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 .header__btn-register{
     margin-left: 10px;
@@ -956,12 +965,8 @@ display: flex;
         display: block;
     }
 }
-
-
-
-
 .user{
-    margin-left: 20px;
+    margin-left: 0px;
     margin-right: 25px;
     padding-right: 20px;
     position: relative;
@@ -1010,6 +1015,9 @@ display: flex;
         padding: 20px;
             }
     }
+}
+.basket__box{
+    margin-right: 13px;
 }
 
 
@@ -1157,10 +1165,16 @@ color: $green;
     .circle__info{
         line-height: 16px;
     }
-
 }
 
 
+.user.header__btn-login--off{
+    .header__basket{
+        margin-right: 20px;
+    }
+}
+
+@import 'media';
 
 
 
