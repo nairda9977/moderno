@@ -14,6 +14,13 @@ $(function(){
         slidesToScroll:4,
          responsive: [
     {
+      breakpoint: 1900,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
       breakpoint: 1400,
       settings: {
         slidesToShow: 2,
@@ -21,14 +28,14 @@ $(function(){
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 1040,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 800,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -73,10 +80,12 @@ $('.header__btn-menu').on('click', function(){
     $('.header__box').toggleClass('active');
 })
     
-$('.product-one__tubs .tab').on('click', function(event) {
+    $('input[type="file"], select').styler();
+    
+$('.product-one__tubs .tab, .settings__tabs .tab').on('click', function(event) {
 var id = $(this).attr('data-id');
-	$('.product-one__tubs').find('.tab-item').removeClass('active-tab').hide();
-	$('.product-one__tubs .tabs').find('.tab').removeClass('active');
+	$('.product-one__tubs, .settings__tabs').find('.tab-item').removeClass('active-tab').hide();
+	$('.product-one__tubs .tabs, .settings__tabs .tabs').find('.tab').removeClass('active');
 	$(this).addClass('active');
 	$('#'+id).addClass('active-tab').fadeIn();
 	return false;

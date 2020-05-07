@@ -8,6 +8,8 @@ html,
 body {
 	height: 100%;
     background-color: #f4f6f5;
+    position: relative;
+    overflow-x: hidden;
 }
 a {
     display: inline-block;
@@ -72,6 +74,8 @@ body{
 .breadcrumbs{
     &__inner{
         padding: 45px 0px 40px;
+        overflow: hidden;
+        width: 1200px;
     }
     &__list{
         li{
@@ -119,4 +123,7 @@ body{
         color: $green;
         font-size: 14px;
     }
+}
+#modal{
+    display: none;
 }
